@@ -53,19 +53,26 @@ body {
 main {
     position: relative;
     margin: 10rem 0 2rem;
+    width: 100%;
     max-width: 340px;
     background-color: white;
     border-radius: 1rem;
     padding: 8rem 0 2rem;
 }
-picture {
+.illustration {
     position: absolute;
-    width: 16rem;
+    width: 15rem;
     top: -7rem;
     left: 2.5rem;
 }
+.background {
+    position: absolute;
+    /* width: 20rem; */
+    left: 2.5rem;
+    top: 0.5rem;
+}
 section {
-    margin: 1rem;
+    margin: 1.5rem;
 }
 h1 {
     text-align: center;
@@ -77,12 +84,39 @@ h1 {
 details {
     padding: 1rem 0;
     border-bottom: 1px solid hsla(240, 6%, 50%, 0.3);
+    position: relative;
 }
 summary {
-    /* color: ; */
-    font-size: 0.9rem;
+    /* position: relative; */
+    font-size: 0.85rem;
+    color: hsl(237, 12%, 33%);
+    list-style: url(images/icon-arrow-down.svg);
+    list-style-position: inside;
 }
-summary.active {font-weight: 700;}
+/* summary::before {
+    position: absolute;
+    list-style: url(images/icon-arrow-down.svg), inside;
+    right: 0;
+    top: 0;
+} */
+summary:hover {
+    cursor: pointer;
+    color: hsl(14, 88%, 65%);
+}
+/* summary::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 30%;
+    left: 0;
+    background-image: url(images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    width: 0.8rem;
+} */
+summary.active {
+    font-weight: 700;
+    list-style: url(images/icon-arrow-up.svg);
+}
 p {
     color: hsl(240, 6%, 50%);
     font-size: 0.85rem;
