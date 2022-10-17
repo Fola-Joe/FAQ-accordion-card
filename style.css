@@ -87,36 +87,23 @@ details {
     position: relative;
 }
 summary {
-    /* position: relative; */
+    position: relative;
     font-size: 0.85rem;
     color: hsl(237, 12%, 33%);
-    list-style: url(images/icon-arrow-down.svg);
-    list-style-position: inside;
 }
-/* summary::before {
-    position: absolute;
-    list-style: url(images/icon-arrow-down.svg), inside;
-    right: 0;
-    top: 0;
-} */
 summary:hover {
     cursor: pointer;
     color: hsl(14, 88%, 65%);
 }
-/* summary::before {
-    content: "";
+summary::after {
+    content: url("images/icon-arrow-down.svg");
     position: absolute;
     right: 0;
-    top: 30%;
-    left: 0;
-    background-image: url(images/icon-arrow-down.svg);
-    background-repeat: no-repeat;
-    width: 0.8rem;
-} */
-summary.active {
+}
+/* summary.active {
     font-weight: 700;
     list-style: url(images/icon-arrow-up.svg);
-}
+} */
 p {
     color: hsl(240, 6%, 50%);
     font-size: 0.85rem;
