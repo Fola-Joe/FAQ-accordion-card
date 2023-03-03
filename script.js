@@ -1,8 +1,12 @@
-// const details = document.querySelectorAll('details');
-const summary = document.querySelectorAll('.summary');
+const details = document.querySelectorAll('details');
+const questionEl = detail.querySelector('.summary');
 
-summary.addEventListener('click', summaryToggle)
-
-const summaryToggle = function () {
-    summary.classList.toggle('active')
-}
+details.forEach(detail => { 
+    questionEl.addEventListener("toggle", () => {
+        if (detail.open === false) {
+            detail.open = true
+        } else {
+            detail.open = false
+        }
+    })
+})
