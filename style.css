@@ -48,6 +48,7 @@ body {
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    /* background-size: contain; */
 }
 main {
     position: relative;
@@ -86,7 +87,6 @@ details {
     transition: all 0.5s;
 }
 details[open] .summary::after {
-    /* background-image: url("./images/icon-arrow-down.svg"); */
     transform: rotate(180deg);
 }
 summary {
@@ -103,14 +103,6 @@ summary::after {
     position: absolute;
     right: 0;
 }
-/* summary:hover::after {
-    transform: rotate(180deg);
-} */
-/* .summary.active {
-    font-weight: 700;
-} */
-
-
 p {
     color: hsl(240, 6%, 50%);
     font-size: 0.85rem;
@@ -119,15 +111,35 @@ p {
     line-height: 1.5;
 }
 
+
 @media screen and (min-width: 1024px) {
     main {
-        max-width: 1100px;
+        max-width: 1000px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* position: initial; */
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+        padding-left: 0;
+        margin: 0;
     }
-    picture {
-        /* position: initial; */
-        position: relative;
+    h1 {
+        text-align: left;
+        font-size: 2.5rem;
     }
+    section {margin-right: 6.5rem;}
+    summary {font-size: 1.2rem;}
+    p {font-size: 1rem;}
+    .illustration {
+        position: unset;
+        margin-left: -2rem;
+        /* margin-right: 2rem; */
+    }
+    .background {
+        /* position: unset; */
+        /* width: 10rem; */
+        margin-top: -19rem;
+        margin-left: -34rem;
+        overflow-x: hidden;
+    }
+    .images {overflow: hidden;}
 }
