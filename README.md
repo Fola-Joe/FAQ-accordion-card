@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub repository](https://github.com/Fola-Joe/FAQ-accordion-card.git)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Live Site URL: [Live site](https://fola-joe.github.io/FAQ-accordion-card/)
 
 ## My process
 
